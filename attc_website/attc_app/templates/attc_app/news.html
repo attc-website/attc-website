@@ -1,0 +1,95 @@
+
+{% extends 'attc_app/base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+    <section id="news" >
+
+    <div class="content d-flex justify-content-center align-items-center flex-wrap">
+        <div class=" d-flex flex-row flex-wrap">
+            <div  class="sub-link m-3 p-3 fw-medium"><a href="#latest" class="text-dark">Latest News</a></div>
+            <div  class="sub-link m-3 p-3 fw-medium"><a href="#archives" class="text-dark">Archives</a></div>
+
+        </div>
+    </div>
+    </section>
+    <!--Latest-->
+    <div id ="latest">
+        <h1  class="m-5">Latest News:</h1>
+    </div>
+    <section id="articles" >
+        <article class="articles d-flex justify-content-center align-items-center flex-wrap">
+            <div class=" d-flex flex-column flex-wrap m-5">
+                <h1>Article Title</h1>
+                <small>By Author</small><br>
+
+                <small class="mb-3">Aug 24 , 2024</small>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae neque, nemo adipisci labore reprehenderit esse aliquid repellat obcaecati itaque possimus nostrum officiis debitis maxime ullam error odit expedita culpa accusamus! Suscipit iste quas impedit laudantium ipsam voluptatem sint aspernatur omnis. Deleniti nesciunt consequatur itaque porro ea voluptatem, quasi repudiandae facere?</p>
+                <img src="images/attc1.png" class="art-img" alt="">
+            </div>
+        </article>
+        <div class="comments d-flex justify-content-start align-items-center flex-wrap m-5">
+            <div>
+                <label for="comments" ><h2>
+                    Comments:
+                </h2></label>
+                <textarea class="comment-text d-flex flex-column " cols="50" id="comment" name="text"></textarea>
+                <button type="submit" class="btn btn-warning">Submit</button>
+            </div>
+        </div>
+        </section>
+        <section id="articles" >
+            <article class="articles d-flex justify-content-center align-items-center flex-wrap">
+                <div class=" d-flex flex-column flex-wrap m-5">
+                    <h1>Article Title</h1>
+                    <small>By Author</small><br>
+
+                    <small class="mb-3">Aug 24 , 2024</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae neque, nemo adipisci labore reprehenderit esse aliquid repellat obcaecati itaque possimus nostrum officiis debitis maxime ullam error odit expedita culpa accusamus! Suscipit iste quas impedit laudantium ipsam voluptatem sint aspernatur omnis. Deleniti nesciunt consequatur itaque porro ea voluptatem, quasi repudiandae facere?</p>
+                    <img src="images/attc1.png" class="art-img" alt="">
+                </div>
+
+            </article>
+            <div class="comments d-flex justify-content-start align-items-center flex-wrap m-5">
+                <div>
+                    <label for="comments" ><h2>
+                        Comments:
+                    </h2></label>
+                    <textarea class="comment-text d-flex flex-column " cols="50" id="comment" name="text"></textarea>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </div>
+            </div>
+            </section>
+        <!--Archive-->
+    <section class="container-archive">
+        <div id ="archives" class=" archive m-5">
+            <h1 class="m-5">Archive:</h1>
+        </div>
+        <div id="articles"  >
+            <article class="articles d-flex justify-content-center align-items-center flex-wrap">
+                <div class=" d-flex flex-column flex-wrap m-5">
+                    <title>Article Title</title>
+                    <small>By Author</small><br>
+
+                    <small class="mb-3">Aug 24 , 2024</small>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae neque, nemo adipisci labore reprehenderit esse aliquid repellat obcaecati itaque possimus nostrum officiis debitis maxime ullam error odit expedita culpa accusamus! Suscipit iste quas impedit laudantium ipsam voluptatem sint aspernatur omnis. Deleniti nesciunt consequatur itaque porro ea voluptatem, quasi repudiandae facere?</p>
+                </div>
+            </article>
+            <div class="comments d-flex justify-content-start align-items-center flex-wrap m-5">
+                <div>
+                    <label for="comments" ><h2>
+                        Comments:
+                    </h2></label>
+                    <textarea class="comment-text d-flex flex-column " cols="50" id="comment" name="text"></textarea>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+{% endblock %}

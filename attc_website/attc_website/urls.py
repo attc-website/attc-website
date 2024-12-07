@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from attc_app.views import index, membership, about, facilities, coaching, leagues
+from attc_app.views import index, membership, about, facilities, coaching, leagues, news
 
 urlpatterns = [
     path('', index, name='index'),
@@ -25,6 +25,7 @@ urlpatterns = [
     path('about/', about, name='about'),
     path('coaching/', coaching, name='coaching'),
     path('facilities/', facilities, name='facilities'),
+    path('news/', news, name='news'),
     path('leagues/', leagues, name='leagues'),
     path('admin/', admin.site.urls),
 ]

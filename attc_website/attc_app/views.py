@@ -18,3 +18,6 @@ def coaching(request):
 
 def leagues(request):
     return render(request, 'attc_app/leagues.html')
+
+def news(request):
+    return render(request, 'attc_app/news.html')
