@@ -1,0 +1,104 @@
+
+{% extends 'attc_app/base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<section id="facilities-content">
+        <div class="content d-flex justify-content-center align-items-center flex-wrap ">
+            <div class=" d-flex flex-row flex-wrap">
+                <div  class="p-5 fw-medium">
+                        <a class="sub-link " aria-current="page" href="#member-type">Membership Types & Costs</a>
+                </div>
+                <div  class="p-5 fw-medium">
+                    <a class="sub-link " aria-current="page" href="#join">Joining Instructions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="member-type" class="m-5 p-5">
+        <h1 class="ms-2 mb-5">
+            Membership Types & Costs
+        </h1>
+        <h2 class="ms-2 mb-5 text-secondary">
+            Membership Costs - 1 October 2024 to 30 June 2025
+        </h2>
+        <table class=" table table-hover table-bordered table-dark">
+            <thead>
+                <tr>
+                    <th scope="col">Type</th>
+                    <th scope="col">Criteria</th>
+                    <th scope="col">Cost</th>
+                </tr>
+            </thead>
+            <tbody class="table-secondary fw-medium fs-4 ">
+                <tr>
+                    <th scope="row" class="fw-medium">Family</th>
+                    <td>All family at one address (must
+                        include at least 1 cadet / junior / student)
+                    </td>
+                    <td>£160.00</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="fw-medium">Adult</th>
+                    <td>Born 1st July 1964 to 31st Dec 2005</td>
+                    <td>£80.00</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="fw-medium">Senior</th>
+                    <td>Born before 01 July 1964</td>
+                    <td>£70.00</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="fw-medium">Student</th>
+                    <td>Full time students (over 18) </td>
+                    <td>£70.00</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="fw-medium">Junior</th>
+                    <td>Born 01 Jan 2006 to 31 Dec 2009</td>
+                    <td>£70.00</td>
+                </tr>
+                <tr>
+                    <th scope="row" class="fw-medium">Cadet</th>
+                    <td>Born 01 Jan 2010 or later</td>
+                    <td>£50.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="join" class="m-5 p-5 fs-4 lh-lg">
+        <h1 class="ms-1 mb-5">
+            Joining Instructions
+        </h1>
+        <ol>
+            <li> Please select your membership type</li>
+            <li> Pay the fees via online banking to: <br>
+                <b>Ashford Table Tennis Club<br>
+                Sort code: 400842<br>
+                Account number: 21212273<br>
+                </b>
+            </li>
+            <li>
+                Please enter member name as reference<br>
+            </li>
+        </ol>
+        <p class="lh-lg ">Or
+            <br>
+            Send a cheque to :<br><b>Membership , Ashford TTC, 13 Sidney Road, Staines upon
+            Thames, TW18 4LP .</b>
+            <br><br>
+            Send <a target="_blank" href="{% static 'website/ATTC-Membership-form.pdf' %}" class="text-danger fw-bold"> this form</a>  on this <span class="text-dark fw-bold ms-1"><i>attcjuniors@gmail.com</i></span>
+        </p><br>
+        <p>
+            <h3>For Enquiries:</h3>
+                Membership Secretary : Mark Roper<br>
+                <b>Tel: 07789 517926</b>
+        </p>
+    </section>
+
+
+{% endblock %}

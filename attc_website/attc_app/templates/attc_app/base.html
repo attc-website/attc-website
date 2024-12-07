@@ -39,13 +39,13 @@
             <div class="collapse navbar-collapse " id="navbarcontent">
                 <ul class="navbar-nav m-auto d-flex flex-wrap">
                     <li class="nav-item">
-                    <a class="nav-link text-white" aria-current="page" href="index.html">Home</a>
+                    <a class="nav-link text-white" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-warning" aria-current="page" href="about.html">About Us</a>
+                        <a class="nav-link active text-warning" aria-current="page" href="/about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="membership.html">Membership</a>
+                        <a class="nav-link text-white" aria-current="page" href="/membership">Membership</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link  text-white" aria-current="page" href="facilities.html">Facilities</a>
@@ -80,6 +80,34 @@
         {% endblock %}
     </div>
 
+
+
+<!--Footer-->
+        <footer id="footer">
+            <div class="footer container-fluid d-flex justify-content-center align-items-center text-white  flex-column m-3">
+                <div class=" d-flex justify-content-center align-items-center flex-column px-3">
+                    <a class="navbar-brand fs-3 fw-bold mt-5 " href="index.html">
+                        <small>Ashford Table Tennis Club</small>
+                    </a>
+                    <sub class="fs-6 mt-1 mb-5">A Member of WR Sports Club</sub>
+                </div>
+                <div>
+                    <ul class="d-flex justify-content-center align-items-center flex-row px-3 m-5">
+                    <li >
+                        <a target="_blank" class=" me-4 text-white" aria-current="page" href="https://www.facebook.com/AshfordTTC.Surrey/"><i class="fa-brands fa-facebook fs-3"></i> </a>
+                    </li>
+                    <li >
+                        <a target="_blank" class=" me-4 text-white" aria-current="page" href="https://www.instagram.com/ashfordttc/"><i class="fa-brands fa-instagram fs-2"></i> </a>
+                    </ul>
+                </div>
+                <div class="d-flex justify-content-center align-items-center flex-row px-3 m-5">
+                    <small>Copyright <i class="fa fa-copyright"></i> 2024 Ashford Table Tennis Club . All Rights Reserved.</small></i>
+                </div>
+            </div>
+        </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init({ offset:300, duration:2000})</script>
 
 </body>
 </html>
