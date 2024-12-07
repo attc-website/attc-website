@@ -1,0 +1,81 @@
+
+{% extends 'attc_app/base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<section id="facilities-content">
+        <div class="content d-flex justify-content-center align-items-center flex-wrap ">
+            <div class=" d-flex flex-row flex-wrap">
+                <div  class="p-5 fw-medium">
+                    <a class="sub-link " aria-current="page" href="#facilities">Club Facilities </a>
+                </div>
+                <div  class="p-5 fw-medium">
+                        <a class="sub-link " aria-current="page" href="#playing-time">Playing Times </a>
+                </div>
+                <div  class="p-5 fw-medium">
+                    <a class="sub-link " aria-current="page" href="#availability">Availability</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="facilities" class="m-5 p-5">
+        <h1 class="ms-5 ">
+            Club Facilities
+        </h1>
+        <p class="ms-5 mt-4">
+            The club is very fortunate to have its own facility – the Ashford Table Tennis Centre – which, arguably, is among the best in the country.
+            <br><br>
+            Opened in October 1981, the purpose-built centre features:
+        </p>
+        <ol class="ms-5">
+            <li>Hardwood floor</li><br>
+            <li>Room for seven practice tables or five match tables</li><br>
+            <li>Dedicated table lighting paid for on a digital metered system</li><br>
+            <li>Full air conditioning & heating</li><br>
+            <li>Club room and viewing area</li><br>
+        </ol>
+        <p class="ms-5 mt-4">
+            The centre is located on a dedicated sports site (WR Sports Club) shared by ATTC, Ashford Tennis and Ashford Bowls clubs.
+            <br><br>
+            Our site therefore also includes:
+        </p>
+        <ol class="ms-5">
+            <li>A fully licensed bar, open from 12 noon daily</li><br>
+            <li>Changing rooms & toilets</li><br>
+            <li>Meeting room</li><br>
+            <li>Large area of secure off-road car parking</li><br>
+        </ol>
+        <p class="ms-5 mt-4">
+            Ashford Table Tennis Centre is open to club members all day every day throughout the year (except December 25th)!
+        </p>
+    </section>
+    <section id="playing-time" class="m-5 p-5">
+        <h1 class="ms-5 ">
+            Playing Times
+        </h1>
+        <p class="ms-5 mt-4">
+            The club facilities are open 7 days a week, from <b>9 AM to 11 PM</b> and tables are open for general practice every day.<br><br>
+            Our tables are also used for:
+        </p>
+        <ul class="ms-5">
+            <li>Local league matches</li><br>
+            <li>Summer club ladder and handicap leagues</li><br>
+            <li>Club championships</li><br>
+            <li>Coaching sessions</li><br>
+            <li>Special Booked Events</li><br>
+        </ul>
+    </section>
+    <section id="availability" class="m-5 p-5">
+        <h1 class="ms-5 ">
+            Availability
+        </h1>
+        <p class="ms-5 mb-4 mt-2">
+            A guide to current table availability is published in the <a target="_blank" href="{% static 'website/weekly_schedule.png' %}" class="text-danger fw-bold">ATTC Weekly Schedule.</a>
+        </p>
+    </section>
+
+{% endblock %}

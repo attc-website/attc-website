@@ -9,3 +9,9 @@ def membership(request):
 
 def about(request):
     return render(request, 'attc_app/about.html')
+
+def facilities(request):
+    return render(request, 'attc_app/facilities.html')
+
+def coaching(request):
+    return render(request, 'attc_app/coaching.html')

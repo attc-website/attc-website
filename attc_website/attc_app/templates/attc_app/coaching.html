@@ -1,0 +1,105 @@
+
+{% extends 'attc_app/base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+
+{% load static %}
+
+<section id="coaching-content">
+        <div class="content  d-flex justify-content-center align-items-center flex-wrap ">
+                <div  class="fw-medium p-3 ">
+                    <a class="sub-link " aria-current="page" href="#coaching">Beginner Coaching</a>
+                </div>
+                <div  class="fw-medium p-3">
+                    <a class="sub-link " aria-current="page" href="#partnerships">Intermediate Coaching</a>
+                </div>
+                <div  class="fw-medium p-3">
+                    <a class="sub-link " aria-current="page" href="#partnerships">Advanced Coaching</a>
+                </div>
+                <div  class="fw-medium p-3">
+                    <a class="sub-link " aria-current="page" href="#partnerships">Individual Coaching</a>
+                </div>
+                <div  class="fw-medium p-3">
+                    <a class="sub-link " aria-current="page" href="#partnerships">Schools Partnership Scheme</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id = "coaching" class=" m-5 p-5">
+        <h1 class="m-5">
+            Coaching
+        </h1>
+        <p class="mx-5 ">
+            Coaching is available at the club for all standards and ages.<br><br>
+            Our coaching officer is Graham Outrim and the coaching team also includes:
+        </p>
+        <ul class="ms-5 mt-3">
+                <li>David Wilson</li>
+                <li>Mahesh Apte</li>
+                <li>Fung Fung</li>
+                <li>Juhn (aka Moises Ballad)</li>
+                <li>Keith Foot</li>
+            </ul>
+            <p class="ms-5 mt-3 me-5 mb-5 ">
+            All active coaches have to have an up to date DBS check and hold the appropriate TTE coaching qualifications.
+            </p>
+            <p class="ms-5 mt-3">
+            <b>Group Coaching</b><br><br>
+            Group coaching sessions are run according to standard of play, namely:
+            <ul class="ms-5 ">
+                <li>Advanced </li>
+                <li>Intermediate</li>
+                <li>Beginner</li>
+                <li>Individual Coaching</li>
+            </ul>
+            <p class="m-5 ">
+            For those who prefer to receive coaching on a one to one basis, this is also available at the club with any of the club coaches.
+            <br><br>
+            <b>Coaching Venue & Timetable</b><br><br>
+            Coaching takes place at the ATTC centre and session times are published in our <a target="_blank" href="{% static 'website/coachingtt.png' %}" class="text-danger fw-bold">ATTC Coaching Timetable.</a>.
+            <br><br>
+            <b>Further Information</b><br><br>
+            If you require any further information regarding table tennis coaching or would like to arrange a one to one coaching session,<b> please e-mail or call Graham Outrim on 07967 435749 or 01784 458043.</b>
+            </p>
+    </section>
+    <section id = "partnerships" class=" m-5 p-5">
+        <h1 class="m-5">
+            Schools Partnership Scheme
+        </h1>
+        <p class="m-5 ">
+            Ashford Table Tennis Club (ATTC), with the backing of Table Tennis England (TTE), are committed to getting more children playing table tennis.
+            <br><br>
+            In September 2001, to help meet this objective, the club created the ATTC Schools Partnership Scheme.
+        </p>
+        <p class="m-5 ">
+            <b>The ATTC Schools Partnership Scheme</b><br><br>
+            The scheme provides funding for the provision of table tennis tables and equipment into local schools and clubs.
+            <br><br>
+            The table tennis equipment is provided on a loan basis with the expectancy of the school paying for an ATTC coach to run either lunchtime or after school clubs. The intention is that this arrangement does not cost the schools or clubs money, as the coaching fees are met by a small fee paid by the children attending.
+            <br><br>
+            The scheme is run by ATTC Coaching Officer, <b>Graham Outrim</b>.
+            <br><br>
+            All active coaches have to have an up to date DBS check (previously known as CRB check) and hold the appropriate TTE coaching qualifications.<br><br>
+            <b>Scheme Success</b><br><br>
+            The scheme is now coaching around 80 children a week across the participating schools and clubs.
+            <br><br>
+            Eligible schools and clubs are usually in fairly close proximity to the club – particularly within the Spelthorne district council area.
+            <br><br>
+            The schools and clubs that are currently part of this partnership scheme and who currently run coaching sessions are:
+        </p>
+        <ul class="ms-5 ">
+            <li>St James (Secondary School), Ashford</li>
+            <li>Salesians (Secondary School – 2 sessions), Chertsey</li>
+            <li>The Magna Carta School (Secondary School School), Staines</li>
+            <li>Thomas Knyvett (Secondary School), Ashford</li>
+        </ul>
+        <p class="m-5 ">
+            <b>Further Information</b><br><br>
+            If you require any further information regarding the ATTC Schools Partnership Scheme, please e-mail or call <b>Graham Outrim</b> on 07967 435749 or 01784 458043.
+        </p>
+    </section>
+
+{% endblock %}
