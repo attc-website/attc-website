@@ -15,3 +15,6 @@ def facilities(request):
 
 def coaching(request):
     return render(request, 'attc_app/coaching.html')
+
+def leagues(request):
+    return render(request, 'attc_app/leagues.html')
