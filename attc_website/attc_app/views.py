@@ -21,3 +21,9 @@ def leagues(request):
 
 def news(request):
     return render(request, 'attc_app/news.html')
+
+def contact(request):
+    return render(request, 'attc_app/contact.html')
+
+def gallery(request):
+    return render(request, 'attc_app/gallery.html')

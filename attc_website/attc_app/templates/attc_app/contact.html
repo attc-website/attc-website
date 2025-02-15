@@ -1,0 +1,83 @@
+
+{% extends 'attc_app/base.html' %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block content %}
+
+{% load static %}
+    <section id="contact-content">
+        <div class="content d-flex justify-content-center align-items-center flex-wrap">
+            <div class=" d-flex flex-row flex-wrap ">
+                <div  class=" p-5 fw-medium">
+                    <a class="sub-link" aria-current="page" href="#map">Find Us</a>
+                </div>
+                <div  class=" p-5 fw-medium">
+                    <a class="sub-link " aria-current="page" href="#quick_forms">Contact Form </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="map" class="m-5 p-5">
+        <h1 class="ms-3 ">
+            Find Us
+        </h1>
+        <p class="ms-3">
+            Ashford TTC is located on Woodthorpe Road, in Ashford, Middlesex, TW15 3JX.
+            <br>
+            The club is on the WR Sports Club site next to Ashford Tennis Club and Ashford Bowls Club.
+        </p>
+
+        <p class="ms-3">
+            <b>Getting Here</b><br><br>
+            By Road: Get directions to our club on Google Maps.<br><br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.3191235365625!2d-0.480080557912655!3d51.43393297191403!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48767153a22b07bb%3A0x82afbc42e886fa88!2sAshford%20Tennis%20Club!5e0!3m2!1sen!2suk!4v1727095935818!5m2!1sen!2suk"  allowfullscreen="" ></iframe>
+            <br><br>
+            By Bus: The 117 Bus stops just outside the club on Woodthorpe Road<br>
+            By Train: The club is located just 10 minutes walk from Ashford Station, located in the High Street.
+        </p>
+        <p class="ms-3">
+            <b>Parking</b><br><br>
+            We share the site with Ashford Tennis & Bowls clubs and there is plenty of free off-road parking on site.<br>
+            We recommend that upon entering the site from Woodthorpe Road, you continue through the front car park, past the buildings and park at the rear where there are always plenty of spaces.
+        </p>
+    </section>
+    <section id="quick_forms" class="m-5 p-5">
+        <h1 class="ms-1 mb-4">
+            Contact Form
+        </h1>
+        <div class="quick_forms container-form  ">
+        <form action="">
+            <div class="mb-3 mt-3">
+                <label for="text" class="mb-3"> Name:</label>
+                <input type="text" class="form-control" id="text" placeholder="Enter Name" name="name">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="email" class="mb-3"> Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+            </div>
+            <div class="mb-3 mt-3">
+                <label for="text" class="mb-3"> Subject:</label>
+                <input type="text" class="form-control" id="text" placeholder="Subject" name="subject">
+            </div>
+            <div class="mb-3">
+                <label for="pwd" class="mb-3"> Password:</label>
+                <input type="password" class="form-control " id="pwd" placeholder="Enter password" name="pswd">
+            </div>
+            <div class="form-check mb-3">
+                <label class="form-check-label">
+                    <input class="form-check-input mb-3" type="checkbox" name="remember"><sub>I consent to ATTC collecting my contact details via this form</sub>
+                </label>
+            </div>
+            <div class="mb-3">
+                <label for="comment" class="mb-3">Message:</label>
+                <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+{% endblock %}
